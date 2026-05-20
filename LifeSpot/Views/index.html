@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <!--Подключение стилей по относительному пути из внешнего файла-->
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<!--Хедер страницы находится сразу над тегом body-->
+<header id="header-index">
+    <div class="block bordered">
+        <!--Заголовок страницы-->
+        <h1>LifeSpot - Прямые трансляции с улиц Санкт-Петербурга</h1>
+        <!--Параграф-->
+        <p>Покажем, что происходит прямо сейчас</p
+    </div>
+</header>
+
+<body>
+    <nav>
+        <form>
+            <input type="search" id="mySearch" name="q" placeholder="Поиск по сайту">
+            <button type="submit">Поиск</button>
+        </form>
+    </nav>
+
+    <div class="video-container">
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254574&hash=445f758447a65065&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
+        <h3 class="video-title">Невский проспект перекресток с Садовой</h3>
+    </div>
+    <div class="video-container">
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254575&hash=20f5f1680eadbae5&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
+        <h3 class="video-title">Метро Пионерская</h3>
+    </div>
+    <div class="video-container">
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254570&hash=57beb446a5eccafd&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
+        <h3 class="video-title">Крейсер Аврора</h3>
+    </div>
+</body>
+
+<!--Сайд-бар страницы (пока все ссылки ведут на главную)-->
+<aside id="sidebar">
+    <div class="navbar">
+        <a href="/"><p>Все трансляции</p></a>
+        <a href="/"><p>О проекте</p></a>
+    </div>
+</aside>
+
+<!--Футер страницы находится под основной частью (body)-->
+<footer>
+    <p>LifeSpot - Сайт создан Фатеевым Виктором</p>
+    <p>Связаться со мной: FateevVV@yandex.ru</p>
+</footer>
+
+</html>

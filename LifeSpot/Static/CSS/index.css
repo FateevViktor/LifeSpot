@@ -1,0 +1,84 @@
+﻿
+/* Комбинированный селектор - применяется ко всем элементам */
+header, footer, aside, body, .navbar, .video-container, .block {
+    font-family: "Times New Roman", sans-serif;
+}
+
+/* Комбинированный селектор - применяется ко всем элементам */
+header, footer, body, .video-container, .block {
+    background-color: rgb(119, 166, 237);
+}
+
+/* Свойства стиля элемента. Подробнее о них - в модуле по CSS*/
+.block {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Простые селекторы*/
+.video-container {
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.navbar {
+    padding-left: 15%;
+}
+
+.navbar>a {
+    color: rgb(0, 0, 0);
+}
+
+/* Стили панели навигации при наведении мышью */
+    .navbar p:hover {
+        color: rgb(197, 225, 240);
+    }
+
+header {
+    color: darkblue;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+/*Стиль хедера для главной страницы имеет приоритет,
+так как используется селектор по идентификатору*/
+#header-index {
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    line-height: 66%;
+    padding-left: 1%;
+}
+
+aside {
+    height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+    width: 10%;
+    position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: rgb(78, 109, 156);
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 2%;
+    font-size: large;
+}
+
+body {
+    padding-left: 11%;
+}
+
+form {
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+#mySearch:focus {
+    color: rgb(0, 0, 0);
+    background-color: rgb(197, 214, 240);
+    outline: none;
+}
