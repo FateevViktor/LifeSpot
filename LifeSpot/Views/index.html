@@ -3,8 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
+    
     <!--Подключение стилей по относительному пути из внешнего файла-->
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    
+    <!-- Внешний скрипт с функциями -->
+    <script type="text/javascript" src="../Static/JS/index.js"></script>
+    
+    <!-- Внутренний скрипт с вызовами функций -->
+    <script>
+        //let session = handleSession();
+        //sessionLog(session)
+
+        // Проверка на возраст
+        //checkAge();
+
+        // сохранение сессии
+        handleSession()
+
+        // вывод данных сессии в консоль
+        sessionLog();
+
+        // функция для получения пользовательского ввода    
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+            
+        /*
+        * Всплывающее окно будет показано по таймауту
+            * 
+        * */
+        setTimeout(() =>
+            alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
+            30000);
+
+    </script>
 </head>
 
 <!--Хедер страницы находится сразу над тегом body-->
@@ -20,8 +53,15 @@
 <body>
     <nav>
         <form>
-            <input type="search" id="mySearch" name="q" placeholder="Поиск по сайту">
-            <button type="submit">Поиск</button>
+            <input type="text" oninput="// Функция объявлена через expression
+                const inputParseFunction = function(){
+                return document.getElementsByTagName('input')[0].value.toLowerCase();
+                }
+
+                // Вызов (функция в аргумент передаётся без круглых скобок)
+                filterContent( inputParseFunction )" 
+                placeholder="Начинайте вводить название видео" 
+                size=50%>
         </form>
     </nav>
 
@@ -29,28 +69,23 @@
         <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254574&hash=445f758447a65065&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
         <h3 class="video-title">Невский проспект перекресток с Садовой</h3>
     </div>
+
     <div class="video-container">
         <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254575&hash=20f5f1680eadbae5&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
         <h3 class="video-title">Метро Пионерская</h3>
     </div>
+
     <div class="video-container">
         <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254570&hash=57beb446a5eccafd&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
         <h3 class="video-title">Крейсер Аврора</h3>
     </div>
+
+
+
 </body>
 
-<!--Сайд-бар страницы (пока все ссылки ведут на главную)-->
-<aside id="sidebar">
-    <div class="navbar">
-        <a href="/"><p>Все трансляции</p></a>
-        <a href="/"><p>О проекте</p></a>
-    </div>
-</aside>
+<!--SIDEBAR-->
 
-<!--Футер страницы находится под основной частью (body)-->
-<footer>
-    <p>LifeSpot - Сайт создан Фатеевым Виктором</p>
-    <p>Связаться со мной: FateevVV@yandex.ru</p>
-</footer>
+<!--FOOTER-->
 
 </html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <!--Подключаем скрипты из файла-->
+    <script type="text/javascript" src="Static/JS/testing.js"></script>
+</head>
+
+<header id="header-index">
+    <h1>LifeSpot - тестовая страница</h1>
+    <p>Здесь можно экспериментировать с кодом</p>
+</header>
+
+<body>
+    <nav>
+        <form>
+            <input type="text" oninput="filterContent(document.getElementsByTagName('input')[0].value.toLowerCase()
+            /* Аргумент - значение, введённое пользователем*/)" placeholder="Начинайте вводить название видео" size=50%>
+        </form>
+    </nav>
+    
+    <div class="video-container">
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254574&hash=445f758447a65065&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
+        <h3 class="video-title">Невский проспект перекресток с Садовой</h3>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254575&hash=20f5f1680eadbae5&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
+        <h3 class="video-title">Метро Пионерская</h3>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-18901857&id=456254570&hash=57beb446a5eccafd&hd=4" width="560" height="315" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen=""></iframe>
+        <h3 class="video-title">Крейсер Аврора</h3>
+    </div>
+</body>
+
+<!--SIDEBAR-->
+<!--FOOTER-->
+
+</html>

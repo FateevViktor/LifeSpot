@@ -6,12 +6,12 @@ header, footer, aside, body, .navbar, .video-container, .block {
 
 /* Комбинированный селектор - применяется ко всем элементам */
 header, footer, body, .video-container, .block {
-    background-color: rgb(119, 166, 237);
+    background-color: rgb(240, 212, 182);
 }
 
 /* Свойства стиля элемента. Подробнее о них - в модуле по CSS*/
 .block {
-    border: 2px solid black;
+    border: 2px solid rgb(207, 172, 134);
     padding: 10px;
 }
 
@@ -36,7 +36,7 @@ header, footer, body, .video-container, .block {
     }
 
 header {
-    color: darkblue;
+    /*color: darkblue;*/
     padding-left: 1%;
     padding-top: 1.2%;
 }
@@ -62,7 +62,7 @@ aside {
     z-index: 1; /* Сайд-бар будет поверх остальных элементов */
     top: 0; /* Сайдбар будет в самой верхней части страницы */
     left: 0;
-    background-color: rgb(78, 109, 156);
+    background-color: rgb(207, 172, 134);
     overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
     padding-top: 2%;
     font-size: large;
@@ -79,6 +79,13 @@ form {
 
 #mySearch:focus {
     color: rgb(0, 0, 0);
-    background-color: rgb(197, 214, 240);
+    background-color: rgb(240, 212, 182);
     outline: none;
+}
+
+.about {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
 }
